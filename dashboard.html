@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Institut Teknologi DEL </title>
+    <!-- HTML5 Shim and Respond.js IE10 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 10]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+      <!-- Meta -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="description" content="Mega Able Bootstrap admin template made using Bootstrap 4 and it has huge amount of ready made feature, UI components, pages which completely fulfills any dashboard needs." />
+      <meta name="keywords" content="bootstrap, bootstrap admin template, admin theme, admin dashboard, dashboard template, admin template, responsive" />
+      <meta name="author" content="codedthemes" />
+      <!-- DEL icon -->
+      <link rel="icon" href="assets/images/DEL.png" type="image/x-icon">
+    <!-- Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+    <!-- waves.css -->
+    <link rel="stylesheet" href="assets/pages/waves/css/waves.min.css" type="text/css" media="all">
+      <!-- Required Fremwork -->
+      <link rel="stylesheet" type="text/css" href="assets/css/bootstrap/css/bootstrap.min.css">
+      <!-- waves.css -->
+      <link rel="stylesheet" href="assets/pages/waves/css/waves.min.css" type="text/css" media="all">
+      <!-- themify icon -->
+      <link rel="stylesheet" type="text/css" href="assets/icon/themify-icons/themify-icons.css">
+      <!-- Font Awesome -->
+      <link rel="stylesheet" type="text/css" href="assets/icon/font-awesome/css/font-awesome.min.css">
+      <!-- scrollbar.css -->
+      <link rel="stylesheet" type="text/css" href="assets/css/jquery.mCustomScrollbar.css">
+        <!-- am chart export.css -->
+        <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+      <!-- Style.css -->
+      <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  </head>
+
+  <body>
+  <div id="pcoded" class="pcoded">
+      <div class="pcoded-overlay-box"></div>
+      <div class="pcoded-container navbar-wrapper">
+          <nav class="navbar header-navbar pcoded-header">
+              <div class="navbar-wrapper">
+                  <div class="navbar-logo">
+                      <a class="mobile-menu waves-effect waves-light" id="mobile-collapse" href="#!">
+                          <i class="ti-menu"></i>
+                      </a>
+                      
+                      <a href="dashboard.html">
+                        <div class="image-container">
+                            <img class="img-fluid" src="assets/images/DEL.png" alt="Theme-Logo" style="width: 45px; height: auto; float: left; margin-right: 6px;">
+                            <h6 class="image-text-right">Institut Teknologi Del</h6>
+                        </div>
+                        
+                  </div>
+                
+                  <div class="navbar-container container-fluid">
+                      <ul class="nav-left">
+                          <li>
+                              <div class="sidebar_toggle"><a href="javascript:void(0)"><i class="ti-menu"></i></a></div>
+                          </li>
+                          
+                      </ul>
+                      <ul class="nav-right">
+                          <li class="header-notification">
+                              <a href="#!" class="waves-effect waves-light">
+                                  
+                                  <span class="badge bg-c-red"></span>
+                              </a>
+                              
+                          </li>
+                            <li class="user-profile header-notification">
+                              <a href="#!" class="waves-effect waves-light">
+                                  <img src="assets/images/admin.png" class="img-radius" alt="User-Profile-Image">
+                                  <span>Admin</span>
+                                  <i class="ti-angle-down"></i>
+                              </a>
+                              <ul class="show-notification profile-notification">
+                                  <li class="waves-effect waves-light">
+                                      <a href="#!">
+                                          <i class="ti-settings"></i> Settings
+                                      </a>
+                                  </li>
+                                  <li class="waves-effect waves-light">
+                                      <a href="user-profile.html">
+                                          <i class="ti-user"></i> Profile
+                                      </a>
+                                  </li>
+                                  <li class="waves-effect waves-light">
+                                      <a href="auth-normal-sign-in.html">
+                                          <i class="ti-layout-sidebar-left"></i> Logout
+                                      </a>
+                                  </li>
+                              </ul>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </nav>
+
+          <div class="pcoded-main-container">
+              <div class="pcoded-wrapper">
+                  <nav class="pcoded-navbar">
+                      <div class="sidebar_toggle"><a href="#"><i class="icon-close icons"></i></a></div>
+                      <div class="pcoded-inner-navbar main-menu">
+                          <div class="">
+                              <div class="main-menu-header">
+                                  <img class="img-80 img-radius" src="assets/images/admin.png" alt="User-Profile-Image">
+                                  <div class="user-details">
+                                      <span id="more-details">Admin<i class="fa fa-caret-down"></i></span>
+                                  </div>
+                              </div>
+        
+                              <div class="main-menu-content">
+                                  <ul>
+                                      <li class="more-details">
+                                          <a href="user-profile.html"><i class="ti-user"></i>View Profile</a>
+                                          <a href="#!"><i class="ti-settings"></i>Settings</a>
+                                          <a href="auth-normal-sign-in.html"><i class="ti-layout-sidebar-left"></i>Logout</a>
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
+                          <div class="p-15 p-b-0">
+                              <form class="form-material">
+                                  <div class="form-group form-primary">
+                                      <input type="text" name="footer-email" class="form-control" required="">
+                                      <span class="form-bar"></span>
+                                      <label class="float-label"><i class="fa fa-search m-r-10"></i>Cari</label>
+                                  </div>
+                              </form>
+                          </div>
+                         
+                          <ul class="pcoded-item pcoded-left-item">
+                              <li class="active">
+                                  <a href="dashboard.html" class="waves-effect waves-dark">
+                                      <span class="pcoded-micon"><i class="ti-home"></i><b>D</b></span>
+                                      <span class="pcoded-mtext" data-i18n="nav.dash.main">Dashboard</span>
+                                      <span class="pcoded-mcaret"></span>
+                                  </a>
+                              </li>                              
+                          </ul>
+
+                          <ul class="pcoded-item pcoded-left-item">
+                            <li class="active">
+                                <a href="Pengumuman.html" class="waves-effect waves-dark">
+                                    <span class="pcoded-micon"><i class="fa fa-bullhorn"></i><b>P</b></span>
+                                    <span class="pcoded-mtext" data-i18n="nav.dash.main">Pengumuman</span>
+                                    <span class="pcoded-mcaret"></span>
+                                </a>
+                            </li>                              
+                        </ul>
+
+
+                            <ul class="pcoded-item pcoded-left-item">
+                                <li class="active">
+                                    <a href="Program_Pendidikan.html" class="waves-effect waves-dark">
+                                        <span class="pcoded-micon"><i class="fa fa-graduation-cap"></i><b>P</b></span>
+                                        <span class="pcoded-mtext" data-i18n="nav.dash.main">Program Pendidikan</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>                                
+                            </ul>
+                                                      
+
+                            <ul class="pcoded-item pcoded-left-item">
+                                <li class="active">
+                                    <a href="lembaga.html" class="waves-effect waves-dark">
+                                        <span class="pcoded-micon"><i class="fa fa-university"></i><b>L</b></span>
+                                        <span class="pcoded-mtext" data-i18n="nav.dash.main">Lembaga</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                            <ul class="pcoded-item pcoded-left-item">
+                                <li class="active">
+                                    <a href="Fasilitas.html" class="waves-effect waves-dark">
+                                        <span class="pcoded-micon"><i class="fa fa-building"></i><b>L</b></span>
+                                        <span class="pcoded-mtext" data-i18n="nav.dash.main">Fasilitas</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>                                
+                            </ul>
+                            
+                        </ul>
+            
+                       
+                              </li>
+                          </ul>
+                      </div>
+                  </nav>
+                  <div class="pcoded-content">
+                      <!-- Page-header start -->
+                      <div class="page-header">
+                          <div class="page-block">
+                              <div class="row align-items-center">
+                                  <div class="col-md-8">
+                                      <div class="page-header-title">
+                                          <h5 class="m-b-10">Institut Teknologi Del</h5>
+                                          <p class="m-b-0">Martuhan, Marroha, Marbisuk</p>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4">
+                                      <ul class="breadcrumb-title">
+                                          <li class="breadcrumb-item">
+                                              <a href="dashboard.html"> <i class="fa fa-home"></i> </a>
+                                          </li>
+                                          <li class="breadcrumb-item"><a href="#!">Dashboard</a>
+                                          </li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <!-- Page-header end -->
+                        <div class="pcoded-inner-content">
+                            <!-- Main-body start -->
+                            <div class="main-body">
+                                <div class="page-wrapper">
+                                    <!-- Page-body start -->
+                                    <div class="page-body">
+                                        <div class="row">
+                                            <!-- task, page, download counter  start -->
+                                            <div class="col-xl-3 col-md-6">
+                                                <div class="card">
+                                                    <div class="card-block">
+                                                        <div class="row align-items-center">
+                                                            <div class="col-8">
+                                                                <h4 class="text-c-purple">Pengumuman</h4>
+                                                                <h6 class="text-muted m-b-0">Sosialisasi MBKM..</h6>
+                                                            </div>
+                                                            <div class="col-4 text-right">
+                                                                <i class="fa fa-bullhorn f-28"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-footer bg-c-purple">
+                                                        <div class="row align-items-center">
+                                                            <div class="col-9">
+                                                                <p class="text-white m-b-0">Edit</p>
+                                                            </div>
+                                                            <div class="col-3 text-right">
+                                                                    <i class="fa fa-arrow-right text-white f-16"></i>
+                                                            </div>
+                                                        </div>
+            
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3 col-md-6">
+                                                <div class="card">
+                                                    <div class="card-block">
+                                                        <div class="row align-items-center">
+                                                            <div class="col-8">
+                                                                <h4 class="text-c-green">PRODI</h4>
+                                                                <h6 class="text-muted m-b-0">FITE, Vokasi, FTI..</h6>
+                                                            </div>
+                                                            <div class="col-4 text-right">                                                                
+                                                                <i class="fa fa-graduation-cap f-28"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-footer bg-c-green">
+                                                        <div class="row align-items-center">
+                                                            <div class="col-9">
+                                                                <p class="text-white m-b-0">Edit</p>
+                                                            </div>
+                                                            <div class="col-3 text-right">
+                                                                <i class="fa fa-arrow-right text-white f-16"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3 col-md-6">
+                                                <div class="card">
+                                                    <div class="card-block">
+                                                        <div class="row align-items-center">
+                                                            <div class="col-8">
+                                                                <h4 class="text-c-red">Lembaga</h4>
+                                                                <h6 class="text-muted m-b-0">Koperasi, UPT Bahasa..</h6>
+                                                            </div>
+                                                            <div class="col-4 text-right">
+                                                                <i class="fa fa-university f-28"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-footer bg-c-red">
+                                                        <div class="row align-items-center">
+                                                            <div class="col-9">
+                                                                <p class="text-white m-b-0">Edit</p>
+                                                            </div>
+                                                            <div class="col-3 text-right">
+                                                                <i class="fa fa-arrow-right text-white f-16"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3 col-md-6">
+                                                <div class="card">
+                                                    <div class="card-block">
+                                                        <div class="row align-items-center">
+                                                            <div class="col-8">
+                                                                <h4 class="text-c-blue">Fasilitas</h4>
+                                                                <h6 class="text-muted m-b-0">Klinik, perpustakaan..</h6>
+                                                            </div>
+                                                            <div class="col-4 text-right">
+                                                                <i class="fa fa-building f-28"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-footer bg-c-blue">
+                                                        <div class="row align-items-center">
+                                                            <div class="col-9">
+                                                                <p class="text-white m-b-0">Edit</p>
+                                                            </div>
+                                                            <div class="col-3 text-right">
+                                                                <i class="fa fa-arrow-right text-white f-16"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- task, page, download counter  end -->
+    
+                                            <!--  sale analytics start -->
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-xl-6 col-md-12 mb-4"> <!-- Setengah bagian atas, box pertama -->
+                                                        <div class="card text-center">
+                                                            <div class="card-header">
+                                                                <h3>PENGUMUMAN</h3>
+                                                                <span class="text-muted">
+                                                                    IT Del Ikuti Kegiatan KMI EXPO XIV di Bali Hingga Terima Penghargaan Pendamping Terbaik</span>
+                                                            </div>
+                                                            <div class="card-block">
+                                                                <img src="assets/images/expo.jpeg" alt="Deskripsi Gambar" class="img-fluid" style="max-width: 480px;">  <br>
+                                                                <p class="mt-3" style="text-align: justify;"> IT Del Ikuti Kegiatan KMI EXPO XIV di Bali Hingga Terima Penghargaan Pendamping Terbaik. KMI EXPO merupakan suatu wadah bagi mahasiswa untuk memperkenalkan bidang usaha yang dapat meningkatkan perkembangan aktivitas kewirausahaan serta ajang kompetisi yang diikuti oleh kelompok usaha yang masuk pada KMI Award sebagai kategori produk utama yang akan dipamerkan pada ajang KMI EXPO XIV 2023. </br>
+                                                                    Kegiatan ini membuka peluang untuk membangun jejaring bisnis dengan investor, mentor dan mitra potensial yang dapat mendukung perkembangan bisnis mahasiswa dimasa depan. Dengan mengikuti kegiatan ini mahasiswa termotivasi menjadi wirausahawan yang lebih tangguh, unggul, kreatif, inovatif, serta mampu bersaing baik secara lokal maupun global.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                            
+                                                    <div class="col-xl-6 col-md-12 mb-4"> <!-- Setengah bagian atas, box kedua -->
+                                                        <div class="card text-center">
+                                                            <div class="card-header">
+                                                                <h3>PROGRAM PENDIDIKAN</h3>
+                                                                <span class="text-muted">APA ITU PROGRAM STUDI?</span> <br>
+                                                            </div> 
+                                                            <div class="card-block"> <br>
+                                                                <img src="assets/images/maba.jpg" alt="Deskripsi Gambar" class="img-fluid" style="max-width: 500px;"> <br> <br>
+                                                                <p class="mt-3" style="text-align: justify;"> 
+                                                                    
+                                                                    Program studi adalah kesatuan rencana belajar sebagai pedoman penyelenggaraan pendidikan akademik dan/atau profesional yang diselenggarakan atas dasar suatu kurikulum serta ditujukan agar mahasiswa dapat menguasai pengetahuan, keterampilan, dan sikap sesuai dengan sasaran kurikulum.
+                                                                </br>
+                                                                    Kurikulum pendidikan tinggi adalah seperangkat rencana dan pengaturan mengenai isi maupun bahan kajian dan pelajaran serta cara penyampaian dan penilaiannya yang digunakan sebagai pedoman penyelenggaraan kegiatan belajar – mengajar di perguruan tinggi.
+                                                                </br>
+                                                                    Dua tahun pertama, seluruh mahasiswa mendapat pelajaran atau mata kuliah yang sama, hal ini bertujuan untuk pembekalan mahasiswa terhadap minat dan bidang studi yang diinginkan.</p>
+                                                                    </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            
+                                                <div class="row">
+                                                    <div class="col-xl-6 col-md-12 mb-4"> <!-- Setengah bagian bawah, box ketiga -->
+                                                        <div class="card text-center">
+                                                            <div class="card-header">
+                                                                <h3>LEMBAGA</h3>
+                                                                <span class="text-muted">Apa itu Lembaga?</span>
+                                                            </div>
+                                                            <div class="card-block">
+                                                                <img src="assets/images/lembaga.png" alt="Deskripsi Gambar" class="img-fluid" style="max-width: 500px;"> 
+                                                                <p class="mt-3" style="text-align: justify;">Lembaga dalam sebuah kampus merujuk pada organisasi atau unit yang beroperasi di dalam lingkungan kampus universitas atau institusi pendidikan tinggi lainnya. Lembaga-lembaga ini memiliki peran tertentu dan berfungsi untuk mendukung berbagai aspek kehidupan kampus, pembelajaran, dan pengembangan mahasiswa.
+
+                                                                    Lembaga-lembaga ini bekerja bersama untuk menciptakan lingkungan belajar yang mendukung, menyediakan layanan bagi mahasiswa, dan memfasilitasi penelitian dan pengembangan ilmu pengetahuan. Fungsi-fungsi ini bersama-sama menciptakan struktur organisasi yang memungkinkan kampus beroperasi dengan efektif.  <br>
+                                                                    1. LPPM (LPPM Institut Teknologi Del) <br>
+Lembaga Penelitian dan Pengabdian Masyarakat (LPPM) adalah lembaga yang berada di bawah Institut Teknologi Del yang mempunyai tugas untuk mengkoordinasikan, memantau, dan menilai pelaksanaan kegiatan penelitian dan pengabdian kepada masyarakat yang diselenggarakan oleh LPPM, GBK, Program Studi, kelompok dan perorangan. 
+                                                               
+                                                                </div>
+                                                        </div>
+                                                    </div>
+                                            
+                                                    <div class="col-xl-6 col-md-12 mb-4"> <!-- Setengah bagian bawah, box keempat -->
+                                                        <div class="card text-center">
+                                                            <div class="card-header">
+                                                                <h3>FASILITAS</h3>
+                                                                <span class="text-muted">Apa itu Fasilitas?</span>
+                                                            </div> <br> <br><br>
+                                                            <div class="card-block">
+                                                                <img src="assets/images/fasilitas.jpg" alt="Deskripsi Gambar" class="img-fluid" style="max-width: 500px;"> <br> <br> <br>
+                                                                <p class="mt-3" style="text-align: justify;">Fasilitas dalam kampus merujuk kepada berbagai sarana dan prasarana yang disediakan oleh institusi pendidikan untuk mendukung kegiatan belajar-mengajar, penelitian, dan kegiatan lainnya. Fasilitas-fasilitas ini dirancang untuk menciptakan lingkungan yang kondusif bagi perkembangan mahasiswa dan kemajuan pendidikan. Berikut adalah beberapa contoh fasilitas kampus beserta kegunaannya:
+                                                                <br/> Fasilitas laboratorium komputasi dimaksudkan sebagai sarana kerja, pendidikan, penelitian maupun pengabdian pada masyarakat. Kepada para pengguna diharapkan pengertian dan kesadarannya untuk menjaga keutuhan dan keamanan peralatan yang ada, serta berperan dalam menciptakan suasana akademik yang lebih berhasil guna. Kesadaran ini hendaknya diterapkan terhadap semua peralatan sarana dan prasarana yang dimiliki oleh Institut Teknologi Del dan semua sistem komputasi lain yang dapat diakses melalui jaringan komunikasi yang tersedia.
+                                                            </div></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+    
+                                        
+                                            
+                                        </div>
+                                    </div>
+                                    <!-- Page-body end -->
+                                </div>
+                                <div id="styleSelector"> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- Required Jquery -->
+    <script type="text/javascript" src="assets/js/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-ui/jquery-ui.min.js "></script>
+    <script type="text/javascript" src="assets/js/popper.js/popper.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap/js/bootstrap.min.js "></script>
+    <script type="text/javascript" src="assets/pages/widget/excanvas.js "></script>
+    <!-- waves js -->
+    <script src="assets/pages/waves/js/waves.min.js"></script>
+    <!-- jquery slimscroll js -->
+    <script type="text/javascript" src="assets/js/jquery-slimscroll/jquery.slimscroll.js "></script>
+    <!-- modernizr js -->
+    <script type="text/javascript" src="assets/js/modernizr/modernizr.js "></script>
+    <!-- slimscroll js -->
+    <script type="text/javascript" src="assets/js/SmoothScroll.js"></script>
+    <script src="assets/js/jquery.mCustomScrollbar.concat.min.js "></script>
+    <!-- Chart js -->
+    <script type="text/javascript" src="assets/js/chart.js/Chart.js"></script>
+    <!-- amchart js -->
+    <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+    <script src="assets/pages/widget/amchart/gauge.js"></script>
+    <script src="assets/pages/widget/amchart/serial.js"></script>
+    <script src="assets/pages/widget/amchart/light.js"></script>
+    <script src="assets/pages/widget/amchart/pie.min.js"></script>
+    <script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+    <!-- menu js -->
+    <script src="assets/js/pcoded.min.js"></script>
+    <script src="assets/js/vertical-layout.min.js "></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="assets/pages/dashboard/custom-dashboard.js"></script>
+    <script type="text/javascript" src="assets/js/script.js "></script>
+</body>
+
+</html>
